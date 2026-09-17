@@ -1,0 +1,86 @@
+backend:
+  name: github
+  repo: sadeepa-malinga/portfolio
+  branch: main
+  base_url: https://decap-cms-oauth.netlify.app
+  auth_endpoint: /auth
+
+# Media files will be stored in the repo under this folder
+media_folder: "images"
+public_folder: "images"
+
+# Single file collection for the whole site content
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "content"
+        label: "All Portfolio Content"
+        file: "content.json"
+        fields:
+          - label: "Site Info"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string" }
+              - { label: "Your Name", name: "name", widget: "string" }
+              - { label: "Role / Title", name: "role", widget: "string" }
+              - { label: "Profile Photo", name: "photo", widget: "image" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Title Line 1", name: "title_line1", widget: "string" }
+              - { label: "Title Line 2 (gradient)", name: "title_line2", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Paragraph 1 (HTML allowed)", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2 (HTML allowed)", name: "paragraph2", widget: "text" }
+
+          - label: "Skills"
+            name: "skills"
+            widget: "object"
+            fields:
+              - label: "Process Engineering Skills"
+                name: "process_engineering"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }
+              - label: "Data & Tech Skills"
+                name: "data_tech"
+                widget: "list"
+                field: { label: "Skill", name: "skill", widget: "string" }
+
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+              - { label: "GitHub URL", name: "github_url", widget: "string", required: false }
+
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Email Address", name: "email", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Copyright Text", name: "text", widget: "string" }
