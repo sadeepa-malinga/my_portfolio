@@ -2,14 +2,12 @@ backend:
   name: github
   repo: sadeepa-malinga/portfolio
   branch: main
-  base_url: https://decap-cms-oauth.netlify.app
-  auth_endpoint: /auth
+  auth_methods:
+    - token
 
-# Media files will be stored in the repo under this folder
 media_folder: "images"
 public_folder: "images"
 
-# Single file collection for the whole site content
 collections:
   - name: "site_content"
     label: "Site Content"
