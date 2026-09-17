@@ -1,0 +1,59 @@
+{
+  "site": {
+    "title": "Sadeepa Malinga | Chemical & Process Engineer | Data Analyst",
+    "name": "Sadeepa Malinga",
+    "role": "Chemical & Process Engineer",
+    "photo": "WhatsApp Image 2026-01-12 at 6.16.51 PM.jpeg"
+  },
+  "hero": {
+    "badge": "Chemical & Process Engineer",
+    "title_line1": "Data-Driven",
+    "title_line2": "Process Engineering",
+    "description": "Bridging traditional Chemical Engineering with Machine Learning and Advanced Analytics to optimize industrial systems.",
+    "linkedin_url": "https://www.linkedin.com/in/sadeepa-malinga-7362a9361/"
+  },
+  "about": {
+    "paragraph1": "I am an undergraduate specializing in <span class=\"text-cyan-400 font-semibold\">Chemical and Process Engineering</span>. My academic journey has provided me with a solid foundation in core engineering principles, including thermodynamics, process design, and transport phenomena.",
+    "paragraph2": "Driven by the potential of Industry 4.0, I have proactively expanded my skillset to include <span class=\"text-cyan-400 font-semibold\">Data Analysis and Machine Learning</span>. I am deeply interested in applying data-driven intelligence—such as predictive maintenance, process optimization, and advanced control systems—to enhance the efficiency and sustainability of chemical plants."
+  },
+  "skills": {
+    "process_engineering": [
+      "Process Design & Simulation",
+      "Aspen HYSYS / Plus",
+      "Mass & Energy Balance",
+      "Thermodynamics",
+      "Fluid Dynamics",
+      "Process Control"
+    ],
+    "data_tech": [
+      "Python (Pandas, NumPy)",
+      "Machine Learning (Scikit-Learn)",
+      "Data Visualization (Matplotlib)",
+      "SQL",
+      "Git"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Industrial Process Data Analysis & Optimization",
+      "description": "Analyzed operational sensor data from chemical plant simulations to detect inefficiencies and predict equipment failures using Python.",
+      "tags": ["Python", "Pandas", "Scikit-Learn"],
+      "github_url": "#"
+    },
+    {
+      "title": "Predictive Maintenance Model for Industrial Pumps",
+      "description": "Built a machine learning classification model to forecast equipment breakdown based on operational vibration, pressure, and temperature telemetry.",
+      "tags": ["Machine Learning", "Python"],
+      "github_url": "#"
+    }
+  ],
+  "contact": {
+    "heading": "Get In Touch",
+    "text": "I'm always open to discussing new engineering challenges, data analytics projects, or professional collaborations.",
+    "email": "sadeepamalingame@gmail.com"
+  },
+  "footer": {
+    "year": "2026",
+    "text": "Sadeepa Malinga. All rights reserved."
+  }
+}
